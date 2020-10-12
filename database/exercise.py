@@ -107,7 +107,7 @@ def deletelog(user_id,id):
 def search_exerciselog(user_id, startdate, enddate):
     conn = psycopg2.connect(database="postgres", user="wendy", password="qazwsx", host="34.80.156.226", port="5432")
     cur = conn.cursor()
-    SQL2 = f"select id, date, record from exercise ORDER BY id ASC WHERE user_id= '{user_id}' and date<='{enddate}' and date>='{startdate}'"
+    SQL2 = f"select id, date, record from exercise WHERE user_id= '{user_id}' and date<='{enddate}' and date>='{startdate}' ORDER BY id ASC"
     cur.execute(SQL2)
     print()
     table=from_db_cursor(cur)
