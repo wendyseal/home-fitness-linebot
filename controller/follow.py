@@ -2,7 +2,6 @@ from linebot.models import (PostbackAction,QuickReply, QuickReplyButton, TextSen
 from config import line_bot_api
 from database.usertable import savebasic01
 
-#當用戶追蹤時，取得用戶個資、建立文字消息
 def handle(event):
     user_id = event.source.user_id
     profile = line_bot_api.get_profile(user_id)

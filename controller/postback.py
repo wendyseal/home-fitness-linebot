@@ -5,7 +5,7 @@ from database.exercise import create_exerciselog01, create_exerciselog02
 from flex.template_msg import buttons_template
 from datetime import date
 today = date.today()
-# 詢問基本資料=================================================================
+
 def handle(event):
     user_id = event.source.user_id
 
@@ -32,7 +32,7 @@ def handle(event):
         line_bot_api.reply_message(event.reply_token, [reply_text_message3])
         savebasic03(user_id, frequency)
         print(event.postback.data)
-
+    # 詢問基本資料=================================================================
 
 
 

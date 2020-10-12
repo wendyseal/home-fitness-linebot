@@ -10,12 +10,12 @@ from database.usertable import checkstate,deletedate,checkdate
 from flex.template_msg import buttons_template,buttons_templatenewdate
 from datetime import date
 
-#切換圖文選單 / 詢問基本資料 / 健身影片推薦 / 運動日誌  (查看&編輯: 新增/查詢/更新/刪除)
 
-#圖文選單ID
 rich_menu_id01 ="richmenu-6751b6c408e76782f9abedf0625c894e"
 rich_menu_id02 ="richmenu-01b7846ff426cbce7096eb905589aab4"
 today = date.today()
+#切換圖文選單 / 詢問基本資料 / 健身影片推薦 / 運動日誌  (查看&編輯: 新增/查詢/更新/刪除)
+#圖文選單ID
 
 def handle(event, rich_menu_id01=rich_menu_id01,rich_menu_id02=rich_menu_id02,today=today):
     user_id = event.source.user_id
