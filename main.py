@@ -48,8 +48,9 @@ def handle_follow(event):
 def handle_post(event):
     postback.handle(event)
 
-if __name__ == '__main__':
-    app.run()
-
+# if __name__ == '__main__':
+#     app.run()
+#
 # heroku專用，偵測heroku給我們的port
-# app.run(host='0.0.0.0', port=os.environ['PORT'])
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=os.environ['PORT'])
