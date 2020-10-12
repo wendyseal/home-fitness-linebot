@@ -1,0 +1,18 @@
+{
+  "type": "template",
+  "altText": "this is a image carousel template",
+  "template": {
+      "type": "image_carousel",
+      "columns": [
+          {
+            "imageUrl": "https://live.staticflickr.com/65535/50427588473_8586d26f5c_m.jpg",
+            "action": {
+              "type": "datetimepicker",
+              "label": "選日期",
+              "data": "q1",
+              "mode": "date"
+            }
+          }
+      ]
+  }
+}

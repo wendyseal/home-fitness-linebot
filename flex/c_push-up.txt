@@ -1,0 +1,153 @@
+{
+  "type": "flex",
+  "altText": "Flex Message",
+  "contents": {
+    "type": "bubble",
+    "hero": {
+      "type": "image",
+      "url": "https://live.staticflickr.com/65535/50125701247_086301d17d_m.jpg",
+      "size": "full",
+      "aspectRatio": "20:13",
+      "aspectMode": "cover",
+      "action": {
+        "type": "uri",
+        "label": "Action",
+        "uri": "https://linecorp.com"
+      }
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "md",
+      "action": {
+        "type": "uri",
+        "label": "Action",
+        "uri": "https://linecorp.com"
+      },
+      "contents": [
+        {
+          "type": "text",
+          "text": "伏地挺身",
+          "size": "xl",
+          "align": "center",
+          "weight": "bold"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "sm",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "baseline",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "1.手腕與肩膀對齊",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "2.肚子屁股腿繃緊 ",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "3.肩膀外旋",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "4.下巴收好肩膀不聳肩、手肘不打開(收好靠近身體)，減少肩膀壓力。 ",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "spacer"
+                },
+                {
+                  "type": "text",
+                  "text": "■ 吸氣下～吐氣上(推地板)  ",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "spacer",
+          "size": "xxl"
+        },
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "想看影片",
+            "uri": "https://www.youtube.com/watch?v=BGR2S2M80dc#t=2m08s"
+          },
+          "color": "#905C44",
+          "style": "primary"
+        },
+        {
+          "type": "text",
+          "text": "想換手機的時候，來學學如何正確伏地挺身",
+          "wrap": true
+        }
+      ]
+    }
+  }
+}

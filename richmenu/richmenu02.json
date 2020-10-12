@@ -1,0 +1,95 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "richmenu02",
+  "chatBarText": "☆★ 編輯運動日誌 ★☆",
+  "areas": [
+    {
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "width": 1216,
+        "height": 852
+      },
+      "action": {
+        "type": "message",
+        "text": "新增紀錄"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1236,
+        "y": 0,
+        "width": 1264,
+        "height": 862
+      },
+      "action": {
+        "type": "message",
+        "text": "查詢紀錄"
+      }
+    },
+    {
+      "bounds": {
+        "x": 10,
+        "y": 910,
+        "width": 1187,
+        "height": 527
+      },
+      "action": {
+        "type": "message",
+        "text": "刪除紀錄"
+      }
+    },
+    {
+      "bounds": {
+        "x": 0,
+        "y": 1447,
+        "width": 910,
+        "height": 239
+      },
+      "action": {
+        "type": "message",
+        "text": "刪除紀錄"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1236,
+        "y": 900,
+        "width": 1264,
+        "height": 537
+      },
+      "action": {
+        "type": "message",
+        "text": "更新紀錄"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1542,
+        "y": 1435,
+        "width": 958,
+        "height": 251
+      },
+      "action": {
+        "type": "message",
+        "text": "更新紀錄"
+      }
+    },
+    {
+      "bounds": {
+        "x": 900,
+        "y": 1438,
+        "width": 634,
+        "height": 248
+      },
+      "action": {
+        "type": "message",
+        "text": "回主選單"
+      }
+    }
+  ]
+}
