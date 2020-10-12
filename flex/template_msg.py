@@ -40,7 +40,7 @@ def buttons_templatenewdate(today):
         template=ButtonsTemplate(
             thumbnail_image_url='https://live.staticflickr.com/65535/50436378452_f0b97f86db_w.jpg',
             title='新增運動日誌',
-            text='請選擇日期~٩(๑❛ᴗ❛๑)۶',
+            text='請選擇日期~٩(๑❛ᴗ❛๑)۶\n查詢需要一點時間，請稍後~',
             actions=[
                 DatetimePickerAction(
                     label="運動日期",
@@ -69,7 +69,7 @@ def buttons_template(today,user_id):
         template=ButtonsTemplate(
             thumbnail_image_url='https://live.staticflickr.com/65535/50435491973_816cca9757_c.jpg',
             title='查詢運動日誌',
-            text='請選擇起始&結束日期~٩(๑❛ᴗ❛๑)۶',
+            text='請選擇起始&結束日期~٩(๑❛ᴗ❛๑)۶\n查詢需要一點時間，請稍後~',
             actions=[
                 DatetimePickerAction(
                     label="起始日期",

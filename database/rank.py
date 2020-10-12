@@ -23,7 +23,7 @@ def count_exercise(user_id,range):
     conn = psycopg2.connect(database="postgres", user="wendy", password="qazwsx", host="34.80.156.226", port="5432")
     cur = conn.cursor()
 
-    SQL1 = f"select count (*) from exercise WHERE user_id= '{user_id}' and date<='{today}' and date>='{firstday}'"
+    SQL1 = f"select count (*) from exercise ORDER BY id ASC WHERE user_id= '{user_id}' and date<='{today}' and date>='{firstday}'"
     cur.execute(SQL1)
     cur_result = cur.fetchone()
     print(cur_result)
@@ -33,7 +33,7 @@ def count_exercise(user_id,range):
     SQL2 = f"select id, date, record from exercise WHERE user_id= '{user_id}' and date<='{today}' and date>='{firstday}'"
     cur.execute(SQL2)
     table=from_db_cursor(cur)
-    table.get_string(sortby='id', sort_key=lambda row: int(row[0]))
+    # table.get_string(sortby='id', sort_key=lambda row: int(row[0]))
 
     # cur_list=[]
     # for i in cur.fetchall():
