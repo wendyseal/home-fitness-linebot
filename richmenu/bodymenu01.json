@@ -1,0 +1,83 @@
+{
+  "size": {
+    "width": 2500,
+    "height": 1686
+  },
+  "selected": true,
+  "name": "鍛鍊部位",
+  "chatBarText": "主選單♪請點選想鍛鍊的部位♬",
+  "areas": [
+    {
+      "bounds": {
+        "x": 403,
+        "y": 623,
+        "width": 559,
+        "height": 254
+      },
+      "action": {
+        "type": "message",
+        "text": "我想練胸肌"
+      }
+    },
+    {
+      "bounds": {
+        "x": 360,
+        "y": 919,
+        "width": 615,
+        "height": 289
+      },
+      "action": {
+        "type": "message",
+        "text": "我要消除鮪魚肚"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1441,
+        "y": 606,
+        "width": 517,
+        "height": 352
+      },
+      "action": {
+        "type": "message",
+        "text": "想當背影Killer"
+      }
+    },
+    {
+      "bounds": {
+        "x": 1326,
+        "y": 1013,
+        "width": 742,
+        "height": 360
+      },
+      "action": {
+        "type": "message",
+        "text": "我想練臀腿"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2208,
+        "y": 0,
+        "width": 292,
+        "height": 843
+      },
+      "action": {
+        "type": "message",
+        "text": "編輯紀錄"
+      }
+    },
+    {
+      "bounds": {
+        "x": 2207,
+        "y": 839,
+        "width": 293,
+        "height": 847
+      },
+      "action": {
+        "type": "message",
+        "text": "目前狀態"
+      }
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "type": "flex",
+  "altText": "Flex Message",
+  "contents": {
+    "type": "bubble",
+    "hero": {
+      "type": "image",
+      "url": "https://live.staticflickr.com/65535/50126168662_040d46e10e_m.jpg",
+      "size": "full",
+      "aspectRatio": "20:13",
+      "aspectMode": "cover",
+      "action": {
+        "type": "uri",
+        "label": "Action",
+        "uri": "https://linecorp.com"
+      }
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "md",
+      "action": {
+        "type": "uri",
+        "label": "Action",
+        "uri": "https://linecorp.com"
+      },
+      "contents": [
+        {
+          "type": "text",
+          "text": "鳥狗式",
+          "size": "xl",
+          "align": "center",
+          "weight": "bold"
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "spacing": "sm",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "baseline",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "(單膝跪姿超人式、中軸平衡練習)",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "1.先四肢著地，掌心在肩關節正下方，膝蓋在髖關節正下方",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "2.活動時保持脊椎的穩定，腰椎不要凹凸。",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "3.腹部收緊，在髖關節及肩關節活動時保持核心穩定。",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "4.微收下巴，不用過多的抬手及抬腿的動作。",
+                  "flex": 8,
+                  "margin": "none",
+                  "size": "sm",
+                  "align": "start",
+                  "weight": "regular",
+                  "wrap": true
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "spacer"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "spacer",
+          "size": "xxl"
+        },
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "想看影片",
+            "uri": "https://www.youtube.com/watch?v=AltYiQv_gvo"
+          },
+          "color": "#905C44",
+          "style": "primary"
+        }
+      ]
+    }
+  }
+}
