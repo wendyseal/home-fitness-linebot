@@ -1,12 +1,19 @@
 from linebot.models import (PostbackAction,QuickReply, QuickReplyButton, TextSendMessage)
 from config import line_bot_api
 from database.usertable import savebasic01
-
-def handle(event):
+rich_menu_id01 ="richmenu-6751b6c408e76782f9abedf0625c894e"
+def handle(event,rich_menu_id01):
     user_id = event.source.user_id
     profile = line_bot_api.get_profile(user_id)
-    print(profile)
-    print(type(profile))
+    try:
+        line_bot_api.link_rich_menu_to_user(
+            user_id=event.source.user_id,
+            rich_menu_id=rich_menu_id01
+        )
+        print('Success')
+    except Exception as e:
+        print(e)
+
     # 開啟檔案，將用戶個資1.display_name 2.user_id 3.picture_url，存入DB
     # display_name = user_profile['displayName']
     # user_id=user_profile['userId']

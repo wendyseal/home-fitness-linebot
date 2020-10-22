@@ -31,35 +31,16 @@ def handle(event, rich_menu_id01=rich_menu_id01,rich_menu_id02=rich_menu_id02,to
     if(event.message.text.find('一切都很好，放馬過來吧！ᕦ(ò_óˇ)ᕤ'or '健康')!= -1):
         start_textmessage = '瞭解～那麼我們開始今天的練習吧(^_−)−☆ 請點擊下方的圖文選單'
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=start_textmessage))
-        try:
-            line_bot_api.link_rich_menu_to_user(
-                user_id=event.source.user_id,
-                rich_menu_id=rich_menu_id01
-            )
-            print('Success')
-        except Exception as e:
-            print(e)
 
     elif (event.message.text.find('啊啊⋯有點累'or '不太好')!= -1):
         start_textmessage = '瞭解～請不要太勉強自己，適度動一動即可。那麼讓我們開始今天的練習吧(^_−)−☆ 請點擊下方的圖文選單'
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=start_textmessage))
-        rich_menu_id01 = 'richmenu-6751b6c408e76782f9abedf0625c894e'
-        try:
-            line_bot_api.link_rich_menu_to_user(
-                user_id=event.source.user_id,
-                rich_menu_id=rich_menu_id01
-            )
-            print('Success')
-        except Exception as e:
-            print(e)
 
     #健身影片推薦=================================================================
     elif (event.message.text.find('我想練胸肌')!= -1):
         with open("./flex/c_push-up.txt", "r", encoding='utf8') as jsonfile:
             json_object = json.load(jsonfile)
         FM = FlexSendMessage.new_from_json_dict(json_object)
-        # send_textmsg = TextSendMessage(text="你好我溫蒂")
-        # line_bot_api.reply_message(controller.reply_token, [FM, send_textmsg])
         line_bot_api.reply_message(event.reply_token, FM)
     elif (event.message.text.find('我要消除鮪魚肚')!= -1) :
         with open(os.path.join(os.getcwd(),"flex","a_10mins_woman.txt"), "r", encoding='utf8') as jsonfile:
@@ -109,7 +90,8 @@ def handle(event, rich_menu_id01=rich_menu_id01,rich_menu_id02=rich_menu_id02,to
 
     #運動日誌-新增紀錄=================================================================
 ## 新增紀錄-1
-    elif ('新增紀錄') == (event.message.text):
+    # elif ('新增紀錄') == (event.message.text):
+    elif (event.message.text) ==('新增紀錄'):
         textmessage = '請選擇運動日期~٩(๑❛ᴗ❛๑)۶'
         replydatepicker = buttons_templatenewdate(today,initial,max,min)#\[TextSendMessage(text=textmessage)
         line_bot_api.reply_message(event.reply_token, [replydatepicker])

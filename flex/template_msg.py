@@ -34,7 +34,7 @@ from database.usertable import checkdate
 
 
 #新增紀錄
-def buttons_templatenewdate(today, initial, max,min):
+def buttons_templatenewdate(initial, max,min):
     buttons_template_message = TemplateSendMessage(
         alt_text='Buttons template',
         template=ButtonsTemplate(
@@ -55,7 +55,7 @@ def buttons_templatenewdate(today, initial, max,min):
     return  buttons_template_message
 
 #查詢日誌-選擇日期=>Postback
-def buttons_template(today,user_id,initial,max,min):
+def buttons_template(user_id,initial,max,min):
     #
     # if 'search=Noall'==check[0]:
     #     changeday=today.strftime("%Y-%m-%d")
