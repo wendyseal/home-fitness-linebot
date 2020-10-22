@@ -8,12 +8,16 @@ from database.rank import count_exercise
 from database.usertable import checkstate,deletedate,checkdate
 
 from flex.template_msg import buttons_template,buttons_templatenewdate
-from datetime import date
+from datetime import date,timedelta
 
 
 rich_menu_id01 ="richmenu-6751b6c408e76782f9abedf0625c894e"
 rich_menu_id02 ="richmenu-01b7846ff426cbce7096eb905589aab4"
 today = date.today()
+initial=today.strftime("%Y-%m-%d")
+max=today.strftime("%Y-%m-%d")
+min=(today - timedelta(days=2650)).strftime("%Y-%m-%d")
+
 #切換圖文選單 / 詢問基本資料 / 健身影片推薦 / 運動日誌  (查看&編輯: 新增/查詢/更新/刪除)
 #圖文選單ID
 
@@ -107,7 +111,7 @@ def handle(event, rich_menu_id01=rich_menu_id01,rich_menu_id02=rich_menu_id02,to
 ## 新增紀錄-1
     elif ('新增紀錄') == (event.message.text):
         textmessage = '請選擇運動日期~٩(๑❛ᴗ❛๑)۶'
-        replydatepicker = buttons_templatenewdate(today)#\[TextSendMessage(text=textmessage)
+        replydatepicker = buttons_templatenewdate(today,initial,max,min)#\[TextSendMessage(text=textmessage)
         line_bot_api.reply_message(event.reply_token, [replydatepicker])
 
 # 查詢紀錄-1 =>查詢/更新/刪除 =>選擇日期 flex.template_msg.buttons_template=>postback

@@ -34,7 +34,7 @@ from database.usertable import checkdate
 
 
 #新增紀錄
-def buttons_templatenewdate(today):
+def buttons_templatenewdate(today, initial, max,min):
     buttons_template_message = TemplateSendMessage(
         alt_text='Buttons template',
         template=ButtonsTemplate(
@@ -46,9 +46,9 @@ def buttons_templatenewdate(today):
                     label="運動日期",
                     data="q1",
                     mode="date",
-                    initial=today.strftime("%Y-%m-%d"),
-                    max=today.strftime("%Y-%m-%d"),
-                    min=(today - timedelta(days=2650)).strftime("%Y-%m-%d")
+                    initial=initial,
+                    max=max,
+                    min=min
                 )]
         )
     )

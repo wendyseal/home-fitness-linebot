@@ -46,12 +46,13 @@ def handle(event):
         user_id = event.source.user_id
         datestr=(event.postback.params['date'])
         print("新增日誌中，收到回傳日期:",event.postback.params['date'])
+        textmessage = f"請輸入{event.postback.params['date']}當天的運動紀錄"
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=textmessage))
         create_exerciselog01(user_id, datestr)
         statelog(user_id, datestr)
         # # recordtime=time.strftime(datestr, "%Y-%m-%d")
         # print(recordtime)
-        textmessage = f"請輸入{event.postback.params['date']}當天的運動紀錄"
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=textmessage))
+
 
     # 運動日誌-查詢日誌=================================================================
 #查詢日誌 我希望起始&結束日期的buttom都按過
