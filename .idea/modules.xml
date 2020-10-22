@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/1006temp.iml" filepath="$PROJECT_DIR$/.idea/1006temp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/sealbot.iml" filepath="$PROJECT_DIR$/.idea/sealbot.iml" />
     </modules>
   </component>
 </project>
