@@ -55,7 +55,7 @@ def buttons_templatenewdate(today, initial, max,min):
     return  buttons_template_message
 
 #查詢日誌-選擇日期=>Postback
-def buttons_template(today,user_id):
+def buttons_template(today,user_id,initial,max,min):
     #
     # if 'search=Noall'==check[0]:
     #     changeday=today.strftime("%Y-%m-%d")
@@ -75,17 +75,17 @@ def buttons_template(today,user_id):
                     label="起始日期",
                     data="startdate",
                     mode="date",
-                    initial=today.strftime("%Y-%m-%d"),
-                    max=today.strftime("%Y-%m-%d"),
-                    min=(today - timedelta(days=2650)).strftime("%Y-%m-%d")
+                    initial=initial,
+                    max=max,
+                    min=min
                 ),
                 DatetimePickerAction(
                     label= "結束日期",
                     data= "enddate",
                     mode= "date",
-                    initial=today.strftime("%Y-%m-%d"),
-                    max=today.strftime("%Y-%m-%d"),
-                    min=(today - timedelta(days=2650)).strftime("%Y-%m-%d"))
+                    initial=initial,
+                    max=max,
+                    min=min)
                 ]
         )
     )

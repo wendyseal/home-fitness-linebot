@@ -117,11 +117,11 @@ def handle(event, rich_menu_id01=rich_menu_id01,rich_menu_id02=rich_menu_id02,to
 # 查詢紀錄-1 =>查詢/更新/刪除 =>選擇日期 flex.template_msg.buttons_template=>postback
 #     elif ('查詢紀錄') or ('更新紀錄') or(' 刪除紀錄') in (event.message.text):
     elif ('查詢紀錄') == (event.message.text):
-        line_bot_api.reply_message(event.reply_token, buttons_template(today,user_id))
-    elif  ('更新紀錄') == (event.message.text):
-        line_bot_api.reply_message(event.reply_token, buttons_template(today,user_id))
+        line_bot_api.reply_message(event.reply_token, buttons_template(today,user_id,initial,max,min))
+    elif ('更新紀錄') == (event.message.text):
+        line_bot_api.reply_message(event.reply_token, buttons_template(today,user_id,initial,max,min))
     elif ('刪除紀錄') == (event.message.text):
-        line_bot_api.reply_message(event.reply_token, buttons_template(today,user_id))
+        line_bot_api.reply_message(event.reply_token, buttons_template(today,user_id,initial,max,min))
 
 # 目前狀態: (呈現本周運動次數&日誌)
     elif '目前狀態'== event.message.text:
